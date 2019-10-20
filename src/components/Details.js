@@ -3,25 +3,16 @@ import { Actions } from 'react-native-router-flux';
 import Places from './../container/placeList';
 import { BackHandler } from 'react-native';
 import {
-  Container, Header, Title, Content, Footer, FooterTab, Button, Icon,
-  Text, List, ListItem, Left, Body, Thumbnail, Right, Card, CardItem, View, Tab, Tabs, TabHeading,
+  Container, Content, Icon,
+  Text, List, ListItem, Body, Card, CardItem, View, Tab, Tabs, TabHeading,
 } from 'native-base';
 import MapView from 'react-native-maps';
-import axios from 'axios';
 import {
-  AsyncStorage,
-  AppRegistry,
   StyleSheet,
-  ScrollView,
-  TouchableOpacity,
-  TextInput,
   Image,
   Dimensions
 } from 'react-native';
-import Polyline from '@mapbox/polyline';
 const {width, height} = Dimensions.get('window')
-const SCREEN_HEIGHT = height
-const SCREEN_WIDTH = width
 const ASPECT_RATIO = width / height
 const LATTITUDE_DELTA = 0.0922
 const LONGTITUDE_DELTA = LATTITUDE_DELTA * ASPECT_RATIO

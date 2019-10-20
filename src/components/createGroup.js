@@ -1,21 +1,9 @@
 import React, { Component } from 'react';
-import { Actions } from 'react-native-router-flux';
 import * as firebase from 'firebase';
-import Groups from './groups.js';
-import { Container, Header, Content, Form, Item, Input, Label, Button, Text } from 'native-base';
+import { Container, Content, Form, Item, Input, Label, Button, Text } from 'native-base';
 import {
-  AsyncStorage,
-  AppRegistry,
   StyleSheet,
-  View,
-  ScrollView,
-  TouchableOpacity,
-  TextInput,
-  Image,
-  Dimensions, Picker,
-  BackAndroid,
-  ToastAndroid,
-  Alert
+  ScrollView
 } from 'react-native';
 export default class CreateGroup extends Component {
   constructor() {
